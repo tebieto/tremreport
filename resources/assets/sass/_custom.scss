@@ -1,0 +1,95 @@
+
+//index page
+#homepage { 
+    width: 100%;
+    height:100%;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+}
+
+.login { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    width:300px;
+    height:300px;
+}
+
+.login h1 { color: black; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+input { 
+    width: 100%; 
+    margin-bottom: 10px; 
+    background: rgba(0,0,0,0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+
+input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }    
+
+.login > form > .btn {
+    background-color: rgb(136,18,8)
+}
+//navbar
+.navbar {
+    background-color: rgb(136,18,8);
+    height: 100px;
+}
+
+.navbar-brand {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+a {
+    color:rgb(250,246,243) !important;
+}
+
+.navbar-nav > li > a{
+    font-size: 17px;
+    margin-top: 25px !important;
+    padding: 5px 15px 5px 15px !important ;
+    font-weight: 700;
+    background-color: rgb(47, 47, 48);
+    //border-radius: 5px;
+    border: 1px solid rgb(255,255,255);
+}
+
+//container
+.links > .nav-pills > li > a {
+    border: 5px solid rgb(255,255,255);
+    background-color: rgb(47, 47, 48);
+    border-radius: 10px;
+}
+
+.links > ul {
+    margin-top: 80px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border: 5px solid rgb(255,255,255);
+}
+
+.links > .nav-pills > li > a:hover { 
+    border: 5px solid rgba(192, 179, 173, 0.57);
+    background-color: rgb(136,18,8);
+}
