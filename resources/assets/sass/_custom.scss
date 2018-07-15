@@ -1,10 +1,31 @@
+//body
+body {
+    font-family: monospace, Helvetica, sans-serif !important;
+}
+
+.btn {
+    background-color: rgb(136,18,8);
+    
+}
+
+.btn-back:hover{
+    border: 5px solid rgba(255, 255, 255, 0.892);
+}
+
+a, button{
+    color:rgb(239, 243, 241) !important;
+    text-decoration: none;
+}
+
+ a:hover {
+    color:rgb(239, 243, 241) !important;
+    text-decoration: none;
+}
 
 //index page
 #homepage { 
     width: 100%;
     height:100%;
-    font-family: 'Helvetica', sans-serif;
-    font-weight: 700;
     background: rgb(255,255,255); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 98%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 98%); /* Chrome10-25,Safari5.1-6 */
@@ -21,33 +42,35 @@
     height:300px;
 }
 
-.login h1 { color: black; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+.login h1 { 
+    color: black; 
+    letter-spacing:1px; 
+    text-align:center; 
+    font-weight: 700;
+    font-size: 60px;
+}
 
 input { 
     width: 100%; 
     margin-bottom: 10px; 
-    background: rgba(0,0,0,0.3);
+    background: rgba(226, 207, 207, 0.563);
     border: none;
     outline: none;
     padding: 10px;
     font-size: 13px;
     color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 4px;
-    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
-    -webkit-transition: box-shadow .5s ease;
-    -moz-transition: box-shadow .5s ease;
-    -o-transition: box-shadow .5s ease;
-    -ms-transition: box-shadow .5s ease;
-    transition: box-shadow .5s ease;
 }
 
-input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }    
+input:focus { 
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); 
+}    
 
 .login > form > .btn {
     background-color: rgb(136,18,8) !important;
-    font-weight: 700;
+    font-weight:700;
+    font-size: 20px;
 }
 
 .login > form > .btn:hover {
@@ -73,44 +96,38 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
     padding: 5px 15px 5px 15px !important ;
     font-weight: 700;
     border-radius: 2px;
-    //border: 1px solid rgb(255,255,255);
 }
 
 //container
 .links > .nav-pills > li > a {
-    border: 5px solid rgb(255,255,255);
+    border: 2px solid rgb(255,255,255);
     background-color: rgb(47, 47, 48);
     border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .links > ul {
     margin-top: 80px;
-    font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
-    border: 5px solid rgb(255,255,255);
 }
 
 .links > .nav-pills > li > a:hover { 
-    border: 5px solid rgba(192, 179, 173, 0.57);
+    border: 5px solid rgb(255,255,255);
     background-color: rgb(136,18,8);
 }
 
-//body
-.btn {
+.nav-pills > .dropdown > .dropdown-menu {
+    background-color: rgb(47, 47, 48);
+    min-width: 215px !important;
+    border: 1px solid rgb(255,255,255);
+}
+
+.nav-pills > .dropdown > .dropdown-menu > .dropdown-header {
+    font-size: 17px;
+}
+
+.nav-pills > .dropdown > .dropdown-menu > li > a:hover{
     background-color: rgb(136,18,8);
-    
-}
-
-.btn-back:hover{
-    border: 5px solid rgba(255, 255, 255, 0.892);
-}
-
-a, button{
-    color:rgb(239, 243, 241) !important;
-    text-decoration: none;
-}
-
- a:hover {
-    color:rgb(239, 243, 241) !important;
-    text-decoration: none;
+    border: 2px solid rgb(255,255,255);
 }
