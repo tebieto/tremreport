@@ -8434,7 +8434,6 @@ input:focus {
   padding: 5px 15px 5px 15px !important;
   font-weight: 700;
   border-radius: 2px;
-  border: 1px solid white;
 }
 
 .links > .nav-pills > li > a {
@@ -8459,6 +8458,10 @@ input:focus {
   background-color: #881208;
 }
 
+.btn-back:hover {
+  border: 5px solid rgba(255, 255, 255, 0.892);
+}
+
 a,
 button {
   color: #eff3f1 !important;
@@ -8468,7 +8471,5 @@ button {
 a:hover {
   color: #eff3f1 !important;
   text-decoration: none;
-  background-color: #d1b8b8;
-  border: 5px solid white;
 }
 

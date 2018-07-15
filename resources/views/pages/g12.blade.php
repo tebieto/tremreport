@@ -22,7 +22,7 @@
                 </section>
                 
                 <button type="button" class="btn btn-sm">SUBMIT</button>
-                <button type="button" class="btn btn-sm"><a href="/dashboard">BACK</a></button>
+                <button type="button" class="btn btn-sm btn-back"><a href="/dashboard">BACK</a></button>
             </form>
         </div>
     </div> 
