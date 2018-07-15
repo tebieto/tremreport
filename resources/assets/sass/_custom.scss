@@ -46,8 +46,14 @@ input {
 input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }    
 
 .login > form > .btn {
-    background-color: rgb(136,18,8)
+    background-color: rgb(136,18,8) !important;
+    font-weight: 700;
 }
+
+.login > form > .btn:hover {
+    border: 5px solid rgb(255,255,255) !important;
+}
+
 //navbar
 .navbar {
     background-color: rgb(136,18,8);
@@ -61,17 +67,12 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
     font-weight: 500;
 }
 
-a {
-    color:rgb(250,246,243) !important;
-}
-
 .navbar-nav > li > a{
     font-size: 17px;
     margin-top: 25px !important;
     padding: 5px 15px 5px 15px !important ;
     font-weight: 700;
-    background-color: rgb(47, 47, 48);
-    //border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid rgb(255,255,255);
 }
 
@@ -92,4 +93,22 @@ a {
 .links > .nav-pills > li > a:hover { 
     border: 5px solid rgba(192, 179, 173, 0.57);
     background-color: rgb(136,18,8);
+}
+
+//body
+.btn {
+    background-color: rgb(136,18,8);
+    
+}
+
+a, button{
+    color:rgb(239, 243, 241) !important;
+    text-decoration: none;
+}
+
+ a:hover {
+    color:rgb(239, 243, 241) !important;
+    text-decoration: none;
+    background-color: rgb(209, 184, 184);
+    border: 5px solid rgb(255,255,255);
 }

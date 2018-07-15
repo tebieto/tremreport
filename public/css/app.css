@@ -8408,7 +8408,12 @@ input:focus {
 }
 
 .login > form > .btn {
-  background-color: #881208;
+  background-color: #881208 !important;
+  font-weight: 700;
+}
+
+.login > form > .btn:hover {
+  border: 5px solid white !important;
 }
 
 .navbar {
@@ -8423,16 +8428,12 @@ input:focus {
   font-weight: 500;
 }
 
-a {
-  color: #faf6f3 !important;
-}
-
 .navbar-nav > li > a {
   font-size: 17px;
   margin-top: 25px !important;
   padding: 5px 15px 5px 15px !important;
   font-weight: 700;
-  background-color: #2f2f30;
+  border-radius: 2px;
   border: 1px solid white;
 }
 
@@ -8452,5 +8453,22 @@ a {
 .links > .nav-pills > li > a:hover {
   border: 5px solid rgba(192, 179, 173, 0.57);
   background-color: #881208;
+}
+
+.btn {
+  background-color: #881208;
+}
+
+a,
+button {
+  color: #eff3f1 !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eff3f1 !important;
+  text-decoration: none;
+  background-color: #d1b8b8;
+  border: 5px solid white;
 }
 

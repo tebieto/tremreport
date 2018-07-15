@@ -4,7 +4,7 @@
     <li role="presentation"><a href="/g12">G12</a></li>
     <li role="presentation"><a href="#">EVENTS</a></li>
     <li class="dropdown" role="presentation">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">SETTINGS<span class="caret"></span></a>
+        <a class="dropdown-toggle" data-toggle="dropdown">SETTINGS<span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="#">Create Branch</a></li>
             <li><a href="#">Create Event</a></li>

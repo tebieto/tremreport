@@ -1,3 +1,6 @@
+@extends('layouts.app')
+@section('content')
+@include('inc.navbar')
 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
     <div class="container">
         <h3 class="page-header"><strong>G12 WEEKLY REPORTS</strong></h3><hr>
@@ -6,7 +9,7 @@
                 <form>
                 <h6><em>G12 Reports</em></h6>
                 <section class="sectiona"><strong><em>Fill in the numbers as in your branch register</em></strong>
-                        <div class=" ">
+                        <div class="form-group">
                                 <label for="weekt">Week Title</label>
                                 <input type="number" id="weekt" name="weekt" class="form-control" placeholder="eg: 1">
                         </div>
@@ -18,8 +21,10 @@
                 
                 </section>
                 
-                <button type="button" class="btn btn-outline-danger btn-sm">SUBMIT</button>
+                <button type="button" class="btn btn-sm">SUBMIT</button>
+                <button type="button" class="btn btn-sm"><a href="/dashboard">BACK</a></button>
             </form>
         </div>
     </div> 
 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
+@endsection

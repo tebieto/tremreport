@@ -1,3 +1,6 @@
+@extends('layouts.app')
+@section('content')
+@include('inc.navbar')
 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
 <div class="container">
         <h3 class="page-header"><strong>MONTHLY REPORTS</strong></h3><hr>
@@ -96,3 +99,4 @@
         </div>
 </div> 
 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
+@endsection

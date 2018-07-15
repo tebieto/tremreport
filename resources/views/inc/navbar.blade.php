@@ -1,6 +1,6 @@
     
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+<div class="container">2
         <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -12,7 +12,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="www.trem.org">HOME</a></li>
+                    <li><a href="https://www.trem.org">HOME</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
     </div>

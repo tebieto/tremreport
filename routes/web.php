@@ -17,4 +17,6 @@ Route::get('/', function () {
 
 Route::get('/', 'PagesController@index');
 Route::get('/dashboard', 'PagesController@dashboard');
-//Route::get('/', 'PagesController@');
+Route::get('/g12', 'PagesController@g12');
+Route::get('/monthly', 'PagesController@monthly');
+Route::get('/weekly', 'PagesController@weekly');
