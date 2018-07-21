@@ -14,7 +14,7 @@
             <li><a href="#">EVENT</a></li>
             <li><a href="#">PASTOR</a></li>
             <li><a href="#">PREACHER</a></li>
-            <li><a href="#">USER</a></li>                       
+            <li><a href="/cuser">USER</a></li>                       
         </ul>
     </li>
 </ul>

@@ -1,9 +1,8 @@
 @extends('layouts.app')
 @section('content')
 @include('inc.navbar')
-<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
-    <div class="container">
-        <h3 class="page-header"><strong>WEEKLY REPORTS</strong></h3><hr>
+
+        <h3 class="page-header"><strong>WEEKLY REPORTS</strong></h3>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
             
             <form>	

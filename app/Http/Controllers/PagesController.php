@@ -25,4 +25,8 @@ class PagesController extends Controller
     public function g12(){
         return view('pages.g12');
     } 
+
+    public function cuser(){
+        return view('pages.cuser');
+    } 
 }

@@ -20,3 +20,5 @@ Route::get('/dashboard', 'PagesController@dashboard');
 Route::get('/g12', 'PagesController@g12');
 Route::get('/monthly', 'PagesController@monthly');
 Route::get('/weekly', 'PagesController@weekly');
+
+Route::get('/cuser', 'PagesController@cuser');

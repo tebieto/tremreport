@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="images/tremlogo2.jpg" style="width:50px; height:auto; float:left; margin: 10px 10px 0px 0px">
+                <img src="images/tremlogo2.jpg">
                 <a class="navbar-brand" href="/">THE REDEEMED<br>EVANGELICAL MISSION</a>
                 
             </div>

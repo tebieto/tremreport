@@ -1,15 +1,20 @@
 //body
 body {
     font-family: monospace, Helvetica, sans-serif !important;
+    padding-top: 50px;
 }
 
 .btn {
     background-color: rgb(136,18,8);
-    
+    min-width: 48px;
 }
 
 .btn-back:hover{
     border: 5px solid rgba(255, 255, 255, 0.892);
+}
+
+.btn-create {
+    min-width: 48px !important;
 }
 
 a, button{
@@ -22,24 +27,10 @@ a, button{
     text-decoration: none;
 }
 
-//index page
-#homepage { 
-    width: 100%;
-    height:100%;
-    background: rgb(255,255,255); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 98%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 98%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
-}
-
-.login { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -150px 0 0 -150px;
-    width:300px;
-    height:300px;
+//login page
+#login { 
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .login h1 { 
@@ -50,22 +41,37 @@ a, button{
     font-size: 60px;
 }
 
-input { 
-    width: 100%; 
-    margin-bottom: 10px; 
-    background: rgba(226, 207, 207, 0.563);
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 13px;
-    color: #fff;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 4px;
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
 }
 
-input:focus { 
-    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); 
-}    
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 
 .login > form > .btn {
     background-color: rgb(136,18,8) !important;
@@ -80,7 +86,6 @@ input:focus {
 //navbar
 .navbar {
     background-color: rgb(136,18,8);
-    height: 100px;
 }
 
 .navbar-brand {
@@ -92,13 +97,24 @@ input:focus {
 
 .navbar-nav > li > a{
     font-size: 17px;
-    margin-top: 25px !important;
-    padding: 5px 15px 5px 15px !important ;
+   // margin-top: 25px !important;
+   // padding: 5px 15px 5px 15px !important ;
     font-weight: 700;
-    border-radius: 2px;
+    //border-radius: 2px;
+}
+
+.navbar-header > img{
+    max-width:50px; 
+    height:auto; 
+    float:left; 
+    margin: 7px 7px 3.5px 3.5px;
 }
 
 //container
+.links {
+    margin-top: 3%;
+}
+
 .links > .nav-pills > li > a {
     border: 2px solid rgb(255,255,255);
     background-color: rgb(47, 47, 48);
@@ -131,3 +147,10 @@ input:focus {
     background-color: rgb(136,18,8);
     border: 2px solid rgb(255,255,255);
 }
+
+
+//Styles for cuser.blade.php
+.main {
+    padding: 100px 15px; 
+}
+

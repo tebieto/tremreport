@@ -1,12 +1,10 @@
 @extends('layouts.app')
 @section('content')
 @include('inc.navbar')
-<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
-<div class="container">
-        <h3 class="page-header"><strong>MONTHLY REPORTS</strong></h3><hr>
+
+        <h3 class="page-header"><strong>MONTHLY REPORTS</strong></h3>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-        <form>
-            
+            <form>
             <section class="sectiona"><strong>SECTION A</strong>
                     <h6>Membership: <em>(Fill in the numbers as in your branch register)</em></h6>
                     <div class="form-group">	
@@ -97,6 +95,5 @@
                 <button type="button" class="btn btn-outline-danger btn-sm">SUBMIT</button>
         </form>
         </div>
-</div> 
-<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
+
 @endsection

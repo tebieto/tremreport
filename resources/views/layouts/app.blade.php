@@ -10,9 +10,10 @@
     </head>
     <body>
         <!-- Navigation -->
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
         <div class="container">
-            @yield('content');
+            @yield('content')
         </div>
-
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
     </body>
 </html>
