@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function index(){
-        return view('pages.index');
+    public function login(){
+        return view('pages.login');
     }
 
     public function dashboard(){
@@ -22,8 +22,28 @@ class PagesController extends Controller
         return view('pages.weekly');
     } 
 
-    public function g12(){
-        return view('pages.g12');
+    public function gtwelve(){
+        return view('pages.gtwelve');
+    } 
+
+    public function cbranch(){
+        return view('pages.cbranch');
+    } 
+
+    public function cgtwelve(){
+        return view('pages.cgtwelve');
+    } 
+
+    public function cevent(){
+        return view('pages.cevent');
+    } 
+
+    public function cpastor(){
+        return view('pages.cpastor');
+    } 
+
+    public function cpreacher(){
+        return view('pages.cpreacher');
     } 
 
     public function cuser(){

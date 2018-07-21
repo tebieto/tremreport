@@ -2,36 +2,45 @@
 @section('content')
 @include('inc.navbar')
 <div class="main">
+    <h3>CREATE AN ADMINISTRATIVE USER</h3><hr>
     <form class="cuser">
         <div class="form-group col-sm-12">
-            <label for="fullName" class="col-sm-2 control-label">Full Name</label>                
+            <label for="userFullName" class="col-sm-2 control-label">Full Name</label>                
             <div class="col-sm-6 input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
+                <input type="text" class="form-control" id="inputUserFullName" placeholder="Full Name">
             </div>
         </div>
         
         <div class="form-group col-sm-12">
-            <label for="inputUsername" class="col-sm-2 control-label">Username</label>                
+            <label for="inputUserUsername" class="col-sm-2 control-label">Username</label>                
             <div class="col-sm-6 input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-thumbs-up"></i></span>
-                <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                <input type="text" class="form-control" id="inputUserUsername" placeholder="Username">
             </div>
         </div>
 
         <div class="form-group col-sm-12">
-            <label for="email" class="col-sm-2 control-label">Email</label>                
+            <label for="userPhone" class="col-sm-2 control-label">Mobile Phone</label>                
+            <div class="col-sm-6 input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                <input type="number" class="form-control" id="inputUserPhone" placeholder="e.g 2348010000001">
+            </div>
+        </div>
+
+        <div class="form-group col-sm-12">
+            <label for="userEmail" class="col-sm-2 control-label">Email</label>                
             <div class="col-sm-6 input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" class="form-control" id="inputUserEmail" placeholder="Email">
             </div>
         </div>
 
         <div class="form-group col-sm-12">
-            <label for="password" class="col-sm-2 control-label">Password</label>                
+            <label for="userPassword" class="col-sm-2 control-label">Password</label>                
             <div class="col-sm-6 input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <input type="password" class="form-control" id="inputUserPassword" placeholder="Password">
             </div>
         </div>
 
