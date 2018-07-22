@@ -8364,8 +8364,9 @@ body {
   border: 5px solid rgba(255, 255, 255, 0.892);
 }
 
-.btn-create {
-  min-width: 48px !important;
+.btn-create,
+.btn-back {
+  margin: 2%;
 }
 
 a,
@@ -8449,33 +8450,11 @@ a:hover {
   font-weight: 700;
 }
 
-.navbar-header > img {
+.navbar-header > .brand-img > img {
   max-width: 50px;
   height: auto;
   float: left;
   margin: 7px 7px 3.5px 3.5px;
-}
-
-.links {
-  margin-top: 3%;
-}
-
-.links > .nav-pills > li > a {
-  border: 2px solid white;
-  background-color: #2f2f30;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.links > ul {
-  margin-top: 80px;
-  font-weight: 700;
-}
-
-.links > .nav-pills > li > a:hover {
-  border: 5px solid white;
-  background-color: #881208;
 }
 
 .nav-pills > .dropdown > .dropdown-menu {
@@ -8493,7 +8472,30 @@ a:hover {
   border: 2px solid white;
 }
 
+.links {
+  margin-top: 3%;
+}
+
+.links > .nav-pills > li > a {
+  border: 2px solid white;
+  background-color: #2f2f30;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.links > ul {
+  margin-top: 80px;
+  font-weight: 700;
+}
+
+.links > .nav-pills > li > a:hover {
+  border: 5px solid white;
+  background-color: #881208;
+}
+
 .main {
   padding: 100px 15px;
+  max-width: 80%;
 }
 

@@ -8,9 +8,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="images/tremlogo2.jpg">
-                <a class="navbar-brand" href="/">THE REDEEMED<br>EVANGELICAL MISSION</a>
-                
+                <div class="brand-img">
+                    <img src="images/tremlogo2.jpg">
+                    <a class="navbar-brand" href="/">THE REDEEMED<br>EVANGELICAL MISSION</a>
+                </div>  
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">

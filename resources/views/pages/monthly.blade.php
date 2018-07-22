@@ -92,7 +92,10 @@
                     </div>
             </section>
             
-                <button type="button" class="btn btn-outline-danger btn-sm">SUBMIT</button>
+                <div class="col-sm-8">
+                    <button type="button" class="btn btn-back pull-left"><a href="/">BACK</a></button>
+                    <button class="btn btn-submit pull-right" type="submit">SUBMIT<i class="glyphicon glyphicon-send"></i></button>
+                </div>
         </form>
         </div>
 

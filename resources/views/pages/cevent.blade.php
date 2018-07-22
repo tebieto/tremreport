@@ -11,8 +11,9 @@
                 <input type="text" class="form-control" id="inputEvent" placeholder="e.g Sunday School Service">
             </div>
         </div>
-    
+
         <div class="col-sm-8">
+            <button type="button" class="btn btn-back pull-left"><a href="/">BACK</a></button>
             <button class="btn btn-create pull-right" type="submit">CREATE<i class="glyphicon glyphicon-send"></i></button>
         </div>
         

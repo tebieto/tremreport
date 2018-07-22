@@ -4,6 +4,7 @@ body {
     padding-top: 50px;
 }
 
+//Buttons
 .btn {
     background-color: rgb(136,18,8);
     min-width: 48px;
@@ -13,8 +14,8 @@ body {
     border: 5px solid rgba(255, 255, 255, 0.892);
 }
 
-.btn-create {
-    min-width: 48px !important;
+.btn-create, .btn-back {
+    margin: 2%;
 }
 
 a, button{
@@ -27,7 +28,7 @@ a, button{
     text-decoration: none;
 }
 
-//login page
+//Login page
 #login { 
   padding-top: 100px;
   padding-bottom: 30px;
@@ -83,7 +84,7 @@ a, button{
     border: 5px solid rgb(255,255,255) !important;
 }
 
-//navbar
+//Navigation
 .navbar {
     background-color: rgb(136,18,8);
 }
@@ -103,34 +104,11 @@ a, button{
     //border-radius: 2px;
 }
 
-.navbar-header > img{
+.navbar-header > .brand-img > img{
     max-width:50px; 
     height:auto; 
     float:left; 
     margin: 7px 7px 3.5px 3.5px;
-}
-
-//container
-.links {
-    margin-top: 3%;
-}
-
-.links > .nav-pills > li > a {
-    border: 2px solid rgb(255,255,255);
-    background-color: rgb(47, 47, 48);
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.links > ul {
-    margin-top: 80px;
-    font-weight: 700;
-}
-
-.links > .nav-pills > li > a:hover { 
-    border: 5px solid rgb(255,255,255);
-    background-color: rgb(136,18,8);
 }
 
 .nav-pills > .dropdown > .dropdown-menu {
@@ -148,9 +126,32 @@ a, button{
     border: 2px solid rgb(255,255,255);
 }
 
+//Links
+.links {
+    margin-top: 3%;
+}
+
+.links > .nav-pills > li > a {
+    border: 2px solid rgb(255,255,255);
+    background-color: rgb(47, 47, 48);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.links > ul {
+    margin-top: 80px;
+    font-weight: 700;
+}
+
+.links > .nav-pills > li > a:hover { 
+    border: 5px solid rgb(255,255,255);
+    background-color: rgb(136,18,8);
+}
 
 //Styles for cuser.blade.php
 .main {
     padding: 100px 15px; 
+    max-width: 80%;
 }
 

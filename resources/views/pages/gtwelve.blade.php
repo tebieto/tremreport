@@ -19,8 +19,10 @@
                 
                 </section>
                 
-                <button type="button" class="btn btn-sm">SUBMIT</button>
-                <button type="button" class="btn btn-sm btn-back"><a href="/dashboard">BACK</a></button>
+                <div class="col-sm-8">
+                        <button type="button" class="btn btn-back pull-left"><a href="/">BACK</a></button>
+                        <button class="btn btn-submit pull-right" type="submit">SUBMIT<i class="glyphicon glyphicon-send"></i></button>
+                </div>
             </form>
         </div>
 @endsection
