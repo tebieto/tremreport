@@ -21,6 +21,17 @@
         </div>
 
         <div class="form-group col-sm-12">
+            <label for="inputUserRole" class="col-sm-2 control-label">User Role</label>
+            <div class="col-sm-6 input-group">
+            <select name="userRole" class="form-control">
+                <option value="first" selected>Admin</option> 
+                <option value="second">Super Admin</option>
+                <option value="third">Superior Admin</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="form-group col-sm-12">
             <label for="userPhone" class="col-sm-2 control-label">Mobile Phone</label>                
             <div class="col-sm-6 input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>

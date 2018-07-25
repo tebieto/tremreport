@@ -8352,7 +8352,7 @@ button.close {
 
 body {
   font-family: monospace, Helvetica, sans-serif !important;
-  padding-top: 50px;
+  padding-top: 2%;
 }
 
 .btn {
@@ -8360,12 +8360,9 @@ body {
   min-width: 48px;
 }
 
-.btn-back:hover {
-  border: 5px solid rgba(255, 255, 255, 0.892);
-}
-
 .btn-create,
-.btn-back {
+.btn-back,
+.btn-submit {
   margin: 2%;
 }
 
@@ -8390,7 +8387,7 @@ a:hover {
   letter-spacing: 1px;
   text-align: center;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .form-signin {
@@ -8441,20 +8438,26 @@ a:hover {
 .navbar-brand {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
-  line-height: 35px;
+  line-height: 25px;
   font-weight: 500;
+  padding: 3% 1% 1% 3%;
+}
+
+.navbar-header {
+  padding: 1% 1% 1% 1%;
 }
 
 .navbar-nav > li > a {
   font-size: 17px;
   font-weight: 700;
+  margin-top: 10px;
 }
 
 .navbar-header > .brand-img > img {
-  max-width: 50px;
+  max-width: 10%;
   height: auto;
   float: left;
-  margin: 7px 7px 3.5px 3.5px;
+  margin: 10px 7px 3.5px 3.5px;
 }
 
 .nav-pills > .dropdown > .dropdown-menu {
@@ -8470,6 +8473,10 @@ a:hover {
 .nav-pills > .dropdown > .dropdown-menu > li > a:hover {
   background-color: #881208;
   border: 2px solid white;
+}
+
+.navbar > .container > .navbar-header {
+  margin-bottom: !important;
 }
 
 .links {
@@ -8490,7 +8497,7 @@ a:hover {
 }
 
 .links > .nav-pills > li > a:hover {
-  border: 5px solid white;
+  border: 2px solid white;
   background-color: #881208;
 }
 

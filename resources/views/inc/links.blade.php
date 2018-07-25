@@ -7,12 +7,12 @@
         <ul class="dropdown-menu">
             <li class="dropdown-header">SELECT EVENT</li>
             <li class="divider"></li>
-            <li><a href="/cbranch"></a></li>
-            <li><a href="/cgtwelve"></a></li>
-            <li><a href="/cevent"></a></li>
-            <li><a href="/cpastor"></a></li>
-            <li><a href="/cpreacher"></a></li>
-            <li><a href="/cuser"></a></li>                       
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>                       
         </ul>
     </li>
     <li role="presentation"><a href="/downloads">DOWNLOADS</a></li>
@@ -26,7 +26,8 @@
             <li><a href="/cevent">Event</a></li>
             <li><a href="/cpastor">Pastor</a></li>
             <li><a href="/cpreacher">Preacher</a></li>
-            <li><a href="/cuser">User</a></li>                       
+            <li><a href="/cuser">User</a></li> 
+            <li><a href="/cdownloads">Downloads</a></li>                        
         </ul>
     </li>
 </ul>

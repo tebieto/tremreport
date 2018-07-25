@@ -2,7 +2,7 @@
 @section('content')
     @include('inc.navbar')
         <div class="login" id="login">
-                <h1>SPIRITUAL REPORT</h1>
+                <h1>SPIRITUAL REPORT</h2>
                 <hr>
                 <form class="form-signin">
                     <div class="form-group">

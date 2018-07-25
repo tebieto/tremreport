@@ -26,6 +26,10 @@ class PagesController extends Controller
         return view('pages.gtwelve');
     } 
 
+    public function downloads(){
+        return view('pages.downloads');
+    }
+
     public function cbranch(){
         return view('pages.cbranch');
     } 
@@ -48,5 +52,9 @@ class PagesController extends Controller
 
     public function cuser(){
         return view('pages.cuser');
+    } 
+
+    public function cdownloads(){
+        return view('pages.cdownloads');
     } 
 }

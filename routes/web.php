@@ -14,17 +14,19 @@ Route::get('/', function () {
 });
 */
 
-
+//Route the main pages
 Route::get('/login', 'PagesController@login');
 Route::get('/', 'PagesController@dashboard');
 Route::get('/gtwelve', 'PagesController@gtwelve');
 Route::get('/monthly', 'PagesController@monthly');
 Route::get('/weekly', 'PagesController@weekly');
+Route::get('/downloads', 'PagesController@downloads');
 
-//The create pages
+//Route the create pages
 Route::get('/cuser', 'PagesController@cuser');
 Route::get('/cbranch', 'PagesController@cbranch');
 Route::get('/cgtwelve', 'PagesController@cgtwelve');
 Route::get('/cevent', 'PagesController@cevent');
 Route::get('/cpastor', 'PagesController@cpastor');
 Route::get('/cpreacher', 'PagesController@cpreacher');
+Route::get('/cdownloads', 'PagesController@cdownloads');
