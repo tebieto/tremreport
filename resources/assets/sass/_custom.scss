@@ -159,7 +159,19 @@ a, button{
 
 //Styles for cuser.blade.php
 .main {
-    padding: 100px 15px; 
+    padding: 100px 5px; 
     max-width: 80%;
+    margin: 0% 10%;
 }
+
+//Responsive tables
+@-moz-document url-prefix() {
+    fieldset { display: table-cell; }
+  }
+
+  //glyphicons
+  i{
+      margin: 2%;
+  }
+
 

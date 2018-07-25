@@ -8502,7 +8502,18 @@ a:hover {
 }
 
 .main {
-  padding: 100px 15px;
+  padding: 100px 5px;
   max-width: 80%;
+  margin: 0% 10%;
+}
+
+@-moz-document url-prefix()  {
+  fieldset {
+    display: table-cell;
+  }
+}
+
+i {
+  margin: 2%;
 }
 

@@ -4,7 +4,6 @@
         @include('inc.navbar') 
         <div class="links">
             @include('inc.links')   
-            
         </div>
     </div>
 @endsection

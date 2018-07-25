@@ -25,12 +25,12 @@
             <div class="form-group col-sm-12">
                 <strong>SECTION B</strong>
                 <h6><em>Ministries In Training, (MIT)</em></h6>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="tithers">Tithers:</label>
                     <input type="number" id="tithers" name="tithers" class="form-control" placeholder="Number Of Tithers">
                 </div>
             
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="newmembers">New Members Received:</label>
                     <input type="number" id="newmembers" name="newmembers" class="form-control" placeholder="Number Of New Members">
                 </div>
@@ -62,22 +62,22 @@
             <div class="form-group col-sm-12">
                 <strong>SECTION D</strong>
                 <h6><em>Group Membership</em></h6>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <label for="cmf">Christian Men Fellowship:</label>
                     <input type="number" id="cmf" name="cmf" class="form-control" placeholder="Number of men members">
                 </div>
                 
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <label for="cyf">Christian Youth Fellowship:</label>
                     <input type="number" id="cyf" name="cyf" class="form-control" placeholder="Number of youth members">
                 </div>
                 
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <label for="cwf">Christian Women Fellowship:</label>
                     <input type="number" id="cwf" name="cwf" class="form-control" placeholder="Number of women members">
                 </div>
                 
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <label for="rc">Royal Children Department:</label>
                     <input type="number" id="rc" name="rc" class="form-control" placeholder="Number of children">
                 </div>
@@ -86,19 +86,19 @@
             <div class="form-group col-sm-12">
                 <strong>SECTION E</strong>
                 <h6><em>G12 Reports</em></h6>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="newcells">New cells this month:</label>
                     <input type="number" id="newcells" name="newcells" class="form-control" placeholder="Number of new cells">
                 </div>
                 
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="totalcn">Total number of cells:</label>
                     <input type="number" id="totalcn" name="totalcn" class="form-control" placeholder=" ">
                 </div>
             </div>
             
             <div class="col-sm-12">
-                <button type="button" class="btn btn-back pull-left"><i class="glyphicon glyphicon-chevron-previous"></i><a href="/">BACK</a></button>
+                <button type="button" class="btn btn-back pull-left"><i class="glyphicon glyphicon-arrow-left"></i><a href="/">BACK</a></button>
                 <button class="btn btn-submit pull-right" type="submit">SUBMIT<i class="glyphicon glyphicon-send"></i></button>
             </div>
         </form>
