@@ -32,6 +32,19 @@
         </div>
 
         <div class="form-group col-sm-12">
+            <label for="userBranch" class="col-sm-2 control-label">Select TREM Branch:</label>
+            <div class="col-sm-6 input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <select name="userBranch" class="form-control">
+                <option value="none" selected disabled>-- Please choose one--</option>
+                <option value="first">Headquarters</option> 
+                <option value="second">Victoria Island</option>
+                <option value="third">Akoka</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="form-group col-sm-12">
             <label for="userPhone" class="col-sm-2 control-label">Mobile Phone</label>                
             <div class="col-sm-6 input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>

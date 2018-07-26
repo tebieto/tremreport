@@ -7,12 +7,8 @@
         <ul class="dropdown-menu">
             <li class="dropdown-header">SELECT EVENT</li>
             <li class="divider"></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>                       
+            <li><a href="#">KLWC</a></li>
+            <li><a href="#">WOC</a></li>                     
         </ul>
     </li>
     <li role="presentation"><a href="/downloads">DOWNLOADS</a></li>

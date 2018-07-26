@@ -8466,10 +8466,6 @@ a:hover {
   border: 1px solid white;
 }
 
-.nav-pills > .dropdown > .dropdown-menu > .dropdown-header {
-  font-size: 17px;
-}
-
 .nav-pills > .dropdown > .dropdown-menu > li > a:hover {
   background-color: #881208;
   border: 2px solid white;

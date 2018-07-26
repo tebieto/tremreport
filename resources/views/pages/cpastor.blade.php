@@ -37,10 +37,15 @@
         </div>
 
         <div class="form-group col-sm-12">
-            <label for="pastorBranch" class="col-sm-2 control-label">Pastor's Branch</label>                
+            <label for="pastorBranch" class="col-sm-2 control-label">Select TREM Branch:</label>
             <div class="col-sm-6 input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-sort-by-alphabet"></i></span>
-                <input type="text" class="form-control" id="inputPastorBranch" placeholder="Select Pastor's Branch">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <select name="pastorBranch" class="form-control">
+                <option value="none" selected disabled>-- Please choose one--</option>
+                <option value="first">Headquarters</option> 
+                <option value="second">Victoria Island</option>
+                <option value="third">Akoka</option>
+            </select>
             </div>
         </div>
 
