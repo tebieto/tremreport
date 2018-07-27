@@ -30,3 +30,6 @@ Route::get('/cevent', 'PagesController@cevent');
 Route::get('/cpastor', 'PagesController@cpastor');
 Route::get('/cpreacher', 'PagesController@cpreacher');
 Route::get('/cdownloads', 'PagesController@cdownloads');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
