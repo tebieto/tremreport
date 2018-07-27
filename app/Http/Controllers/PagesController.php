@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use auth;
 
 class PagesController extends Controller
 {
@@ -11,7 +12,11 @@ class PagesController extends Controller
     }
 
     public function dashboard(){
+		if (auth::check()) {
         return view('pages.dashboard');
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function monthly(){

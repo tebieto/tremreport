@@ -23,6 +23,7 @@ Route::get('/weekly', 'PagesController@weekly');
 Route::get('/downloads', 'PagesController@downloads');
 
 //Route the create pages
+
 Route::get('/cuser', 'PagesController@cuser');
 Route::get('/cbranch', 'PagesController@cbranch');
 Route::get('/cgtwelve', 'PagesController@cgtwelve');

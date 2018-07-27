@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 @include('inc.navbar')
+
+<div id="app">
 <div class="main">
     <h3>CREATE AN ADMINISTRATIVE USER</h3><hr>
     <form class="cuser">
@@ -75,4 +77,7 @@
         
     </form>
 </div>
+</div>
+<script src="{{ asset('js/app.js') }}"></script>
+
 @endsection
