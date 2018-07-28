@@ -32,14 +32,14 @@ class RegisterController extends Controller
         $this->validator($request->all())->validate();
 
        //Create seller
-        $seller = $this->create($request->all());
+        $user = $this->create($request->all());
 
         //Authenticates seller
        $credentials = $request->only('email', 'password');
 
         if (($credentials)) {
             // Authentication passed...
-           return redirect()->intended('login/seller/login');
+           return redirect()->intended('/cuser');
         }
     }
 
@@ -48,7 +48,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/register/seller/register';
+    protected $redirectTo = '/cuser';
 
     /**
      * Create a new controller instance.
@@ -57,7 +57,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+       
     }
 
     /**
@@ -89,9 +89,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-       	
-		$avatar = 'public/default/avatars/default.png';	
-		$avatar = asset(Storage::url($avatar));
 		
         $user= User::create([
             'name' => $data['name'],
@@ -103,7 +100,6 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
 		
-		profile::create(['user_id' => $user->id]);
 		
 		return $user;
     }

@@ -41,3 +41,9 @@ Route::post('/custom/register', [
 	'uses' => 'RegisterController@register',
 	'as' => 'customRegister'
 	]);
+	
+	
+Route::post('/custom/login', [
+	'uses' => 'LoginController@login',
+	'as' => 'customLogin'
+	]);

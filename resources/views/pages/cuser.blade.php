@@ -2,6 +2,9 @@
 @section('content')
 @include('inc.navbar')
 
+<div class="links">
+   @include('inc.links')   
+</div>
 <div id="app">
 <div class="main">
     <h3>CREATE AN ADMINISTRATIVE USER</h3><hr>
@@ -44,9 +47,10 @@
             <label for="role" class="col-sm-2 control-label">User Role</label>
             <div class="col-sm-6 input-group">
             <select name="role" class="form-control">
-                <option value="0" selected="{{ old('role')==0 ? 'selected' : ' ' }}">Admin</option> 
-                <option value="1" selected="{{ old('role')==1 ? 'selected' : ' ' }}" >Super Admin</option>
-                <option value="2" selected="{{ old('role')==2 ? 'selected' : ' ' }}">Head Admin</option>
+				<option value="none" selected disabled>-- Please choose one--</option>
+                <option value="0" selected">Admin</option> 
+                <option value="1"  >Super Admin</option>
+                <option value="2" >Head Admin</option>
             </select>
 			
 			@if ($errors->has('role'))
@@ -64,9 +68,9 @@
             <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
             <select name="branch"  class="form-control">
                 <option value="none" selected disabled>-- Please choose one--</option>
-                <option value="1" selected="{{ old('branch')==1 ? 'selected' : ' ' }}">Headquarters</option> 
-                <option value="2" selected="{{ old('branch')==2 ? 'selected' : ' ' }}" >Victoria Island</option>
-                <option value="3" selected="{{ old('branch')==3 ? 'selected' : ' ' }}" >Akoka</option>
+                <option value="1" >Headquarters</option> 
+                <option value="2"  >Victoria Island</option>
+                <option value="3" >Akoka</option>
             </select>
 			
 			@if ($errors->has('branch'))

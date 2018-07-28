@@ -1,23 +1,33 @@
 @extends('layouts.app')
 @section('content')
     @include('inc.navbar')
+	
         <div class="login" id="login">
                 <h1>SPIRITUAL REPORT</h2>
                 <hr>
-                <form class="form-signin">
-                    <div class="form-group">
+               <form class="form-signin" method="POST" action="/custom/login">
+                        {{ csrf_field() }}
+						
+						<div class="form-group">
                         <label for="username" class="control-label">USERNAME</label>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Username" required autofocus/>
-                        </div>
+                            <input type="text" name="username" class="form-control" placeholder="Username" required autofocus/>
+							
+						@if (session('error'))
+							<tr>
+								<td><strong>{{ session('error') }}</strong></td>
+							</tr>
+						@endif	
+							
+						</div>
                     </div>
                     
                     <div class="form-group">
                         <label for="password" class="control-label">PASSWORD</label>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input type="password" class="form-control" placeholder="Password" required/>
+                            <input name="password" type="password" class="form-control" placeholder="Password" required/>
                         </div>
                     </div>
 
