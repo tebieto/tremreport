@@ -5,7 +5,8 @@
 <div id="app">
 <div class="main">
     <h3>CREATE AN ADMINISTRATIVE USER</h3><hr>
-    <form class="cuser">
+    <form class="cuser" method="POST" action="{{ route('register') }}">
+                        {{ csrf_field() }}
         <div class="form-group col-sm-12">
             <label for="userFullName" class="col-sm-2 control-label">Full Name</label>                
             <div class="col-sm-6 input-group">
@@ -63,6 +64,14 @@
         </div>
 
         <div class="form-group col-sm-12">
+            <label for="userPassword" class="col-sm-2 control-label">Password</label>                
+            <div class="col-sm-6 input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input type="password" class="form-control" id="inputUserPassword" placeholder="Password">
+            </div>
+        </div>
+		
+		<div class="form-group col-sm-12">
             <label for="userPassword" class="col-sm-2 control-label">Password</label>                
             <div class="col-sm-6 input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>

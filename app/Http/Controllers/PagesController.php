@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use auth;
+use App\User;
 
 class PagesController extends Controller
 {
@@ -56,7 +57,15 @@ class PagesController extends Controller
     } 
 
     public function cuser(){
+		$user= User::first();
+		if(empty($user)){
+		return view('pages.cuser');	
+		}
+        if (auth::check()) {
         return view('pages.cuser');
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function cdownloads(){
