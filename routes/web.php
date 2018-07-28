@@ -34,3 +34,10 @@ Route::get('/cdownloads', 'PagesController@cdownloads');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Auth Routes
+
+Route::post('/custom/register', [
+	'uses' => 'RegisterController@register',
+	'as' => 'customRegister'
+	]);
