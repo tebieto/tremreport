@@ -19,5 +19,16 @@
             @yield('content')
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
-    </body>
+    
+	<!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
+	<script src="{{ asset('js/notify.min.js') }}"></script>
+
+	<script>
+	@if(Session::has('success'))
+    $.notify("{{Session::get('success')}}", { position:"right top" });  
+   @endif
+	</script>
+	
+	</body>
 </html>

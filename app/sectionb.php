@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class g12 extends Model
+class sectionb extends Model
 {
     protected $fillable = [
-       'user_id', 'month', 'branch','year', 'week', 'attendance'
+        'user_id', 'month', 'branch','year', 'tithers', 'newmembers',
     ];
 }

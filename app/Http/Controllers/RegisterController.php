@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\profile;
 use Storage;
+use Session;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -39,7 +40,9 @@ class RegisterController extends Controller
 
         if (($credentials)) {
             // Authentication passed...
-           return redirect()->intended('/cuser');
+			
+			Session::flash('success', 'Account was created successfully.');
+	        return redirect()->back();
         }
     }
 

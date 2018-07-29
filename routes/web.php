@@ -47,3 +47,23 @@ Route::post('/custom/login', [
 	'uses' => 'LoginController@login',
 	'as' => 'customLogin'
 	]);
+	
+Route::post('/save/monthly', [
+	'uses' => 'SaveController@saveMonthly',
+	'as' => 'saveMonthly'
+	]);
+	
+Route::post('/save/weekly', [
+	'uses' => 'SaveController@saveWeekly',
+	'as' => 'saveWeekly'
+	]);
+	
+Route::post('/save/g12', [
+	'uses' => 'SaveController@saveG12',
+	'as' => 'saveG12'
+	]);
+	
+Route::post('/save/branch', [
+	'uses' => 'SaveController@saveBranch',
+	'as' => 'saveBranch'
+	]);

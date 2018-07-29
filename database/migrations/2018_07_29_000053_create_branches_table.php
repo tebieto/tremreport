@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateG12sTable extends Migration
+class CreateBranchesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,15 @@ class CreateG12sTable extends Migration
      */
     public function up()
     {
-        Schema::create('g12s', function (Blueprint $table) {
+        Schema::create('branches', function (Blueprint $table) {
             $table->increments('id');
 			$table->integer('user_id');
-			 $table->string('month');
-			 $table->integer('year');
-			  $table->integer('branch');
-			 $table->integer('week');
-			 $table->integer('attendance');
-			
-            $table->timestamps();
+			 $table->text('country');
+			 $table->text('city');
+			 $table->text('address');
+			  $table->text('state');
+			 $table->text('name');
+			 $table->timestamps();
         });
     }
 
@@ -33,6 +32,6 @@ class CreateG12sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('g12s');
+        Schema::dropIfExists('branches');
     }
 }
