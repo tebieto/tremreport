@@ -2,7 +2,7 @@
     <li role="presentation"><a href="/monthly">MONTHLY</a></li>
     <li role="presentation"><a href="/weekly">WEEKLY</a></li>
     <li role="presentation"><a href="/gtwelve">G12</a></li>
-    <li class="dropdown" role="presentation">
+    <!--li class="dropdown" role="presentation">
         <a class="dropdown-toggle" data-toggle="dropdown">EVENTS<span><i class="glyphicon glyphicon-chevron-down"></i></span></a>
         <ul class="dropdown-menu">
             <li class="dropdown-header">SELECT EVENT</li>
@@ -10,7 +10,7 @@
             <li><a href="#">KLWC</a></li>
             <li><a href="#">WOC</a></li>                     
         </ul>
-    </li>
+    </li-->
     <li role="presentation"><a href="/downloads">DOWNLOADS</a></li>
     <li class="dropdown" role="presentation">
         <a class="dropdown-toggle" data-toggle="dropdown">SETTINGS<span><i class="glyphicon glyphicon-chevron-down"></i></span></a>
