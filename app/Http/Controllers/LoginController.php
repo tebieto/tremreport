@@ -20,7 +20,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            return redirect()->intended('/cuser');
+            return redirect()->intended('/dashboard');
         } else {
 			Session::flash('error', 'Account not found.');
 			return redirect()->intended('/cuser');
