@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @include('inc.navbar')
-<div class="main">
+<div class="main" id="app">
     <table class="table table-striped">
     <h3>DOWNLOADS SECTION</h3><hr>
         <thead>
@@ -14,34 +14,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Gtwelve Manual</td>
-                <td>2018</th>
-                <td>Official manual of the TREM-g12 network</td>
-                <td><i class="glyphicon glyphicon-download-alt"></i></td>
+            <tr v-for="download in allDownloads">
+                <th scope="row">@{{download.id}}</th>
+                <td>@{{download.name}}</td>
+                <td>@{{download.year}}</th>
+                <td>@{{download.description}}</td>
+                <td ><a :href="download.url" style="background:#000; padding:5px; border-radius:50%;"><i class="glyphicon glyphicon-download-alt"></i></a></td>
             </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Royal Children's Church Manual</td>
-                <td>2018</th>
-                <td>Children's teacher manual</td>
-                <td><i class="glyphicon glyphicon-download-alt"></i></td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Daily Devotion</td>
-                <td>2018</th>
-                <td>Personal daily meditation</td>
-                <td><i class="glyphicon glyphicon-download-alt"></i></td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Daily Confession</td>
-                <td>2018</th>
-                <td>Speak powerful words to your day</td>
-                <td><i class="glyphicon glyphicon-download-alt"></i></td>
-            </tr>
+            
         </tbody>
     </table>
 

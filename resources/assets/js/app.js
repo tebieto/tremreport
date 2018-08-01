@@ -18,5 +18,106 @@ window.Vue = require('vue');
 Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+	
+	data() {
+		
+	return {
+
+	url: "",
+	
+	uploadDelay: [],
+	
+	form: new FormData,
+	
+	allDownloads: [],
+
+
+	}
+		
+		
+		
+	},
+	
+	mounted() {	
+	
+	this.getAllDownloads()
+	
+	
+	},
+	
+	methods: {
+		
+		getAllDownloads() {
+			
+			axios.get('/get/all/downloads').then(response=>{
+		
+		response.data.forEach((download) => {
+		this.allDownloads.push(download)
+		
+		})
+		 
+	})
+	
+			
+			
+		},
+		
+		showFilePicker() {
+	    var select = document.getElementById('productimage')	
+		select.click();
+		
+		},
+		
+		fileChange(e) {
+		
+		let selected=e.target.files[0];
+		
+		if (!selected) {
+		return 0
+		}
+		
+		
+		this.uploadDelay.push('File')
+		
+		
+		
+		let selectedFile=e.target.files[0];
+		
+		
+		this.attachment=selectedFile;
+		this.form.append('fl', this.attachment);
+		const config = {headers: {'Content-Type': 'multipart/form-data'}};
+		
+		axios.post('/upload/file', this.form, config).then(response=>{
+		//success
+		
+		
+			
+			if (response.data.length == 0) {
+			this.uploadDelay= [];
+			
+			return
+			
+			}
+					
+					this.url = [];
+					this.uploadDelay= [];
+					this.url=response.data.URL;
+				
+		
+		})
+				.catch(response=>{
+				//errors
+				});
+		
+},
+
+		
+		
+		
+	}
 });
+
+
+

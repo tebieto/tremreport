@@ -25,6 +25,8 @@ Route::get('/downloads', 'PagesController@downloads');
 //Route the create pages
 
 Route::get('/cuser', 'PagesController@cuser');
+
+
 Route::get('/cbranch', 'PagesController@cbranch');
 Route::get('/cgtwelve', 'PagesController@cgtwelve');
 Route::get('/cevent', 'PagesController@cevent');
@@ -67,3 +69,30 @@ Route::post('/save/branch', [
 	'uses' => 'SaveController@saveBranch',
 	'as' => 'saveBranch'
 	]);
+
+Route::post('/save/event', [
+	'uses' => 'SaveController@saveEvent',
+	'as' => 'saveEvent'
+	]);
+	
+Route::post('/create/download', [
+	'uses' => 'SaveController@createDownload',
+	'as' => 'createDownload'
+	]);
+	
+	
+Route::post('/create/g12', [
+	'uses' => 'SaveController@createG12',
+	'as' => 'createG12'
+	]);
+	
+Route::post('/upload/file', [
+	'uses' => 'SaveController@uploadFile',
+	'as' => 'uploadFile'
+	]);
+	
+Route::get('/get/all/downloads', [
+	'uses' => 'SaveController@allDownloads',
+	'as' => 'allDownloads'
+	]);
+	

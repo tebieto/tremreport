@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEventsTable extends Migration
+class CreateCg12sTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,16 @@ class CreateEventsTable extends Migration
      */
     public function up()
     {
-        Schema::create('events', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('cg12s', function (Blueprint $table) {
+           $table->increments('id');
 			$table->integer('user_id');
-			$table->string('month');
-			$table->integer('year');
-			$table->integer('branch');
-			$table->text('name');
-			$table->text('description');
-            $table->timestamps();
+			 $table->text('country');
+			 $table->text('city');
+			 $table->text('address');
+			  $table->text('state');
+			 $table->text('name');
+			 $table->integer('branch');
+			 $table->timestamps();
         });
     }
 
@@ -32,6 +33,6 @@ class CreateEventsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('events');
+        Schema::dropIfExists('cg12s');
     }
 }

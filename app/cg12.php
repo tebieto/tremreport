@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class event extends Model
+class cg12 extends Model
 {
     protected $fillable = [
-       'user_id', 'month', 'branch', 'year', 'name', 'description',
+       'user_id', 'country', 'state', 'city', 'address', 'branch', 'name'
     ];
 }

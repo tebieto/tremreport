@@ -21,39 +21,93 @@ class PagesController extends Controller
     } 
 
     public function monthly(){
-        return view('pages.monthly');
+        if (auth::check()) {
+			
+      return view('pages.monthly');
+		
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function weekly(){
-        return view('pages.weekly');
+        if (auth::check()) {
+			
+      return view('pages.weekly');
+		
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function gtwelve(){
-        return view('pages.gtwelve');
+        if (auth::check()) {
+			
+     return view('pages.gtwelve');
+		
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function downloads(){
-        return view('pages.downloads');
+        if (auth::check()) {
+			
+     return view('pages.downloads');
+		
+		} else {
+			return view('pages.login');
+		}
     }
 
     public function cbranch(){
-        return view('pages.cbranch');
+        if (auth::check()) {
+			
+     return view('pages.cbranch');
+		
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function cgtwelve(){
-        return view('pages.cgtwelve');
+        if (auth::check()) {
+			
+      return view('pages.cgtwelve');
+		
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function cevent(){
-        return view('pages.cevent');
+        if (auth::check()) {
+			
+       return view('pages.cevent');
+		
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function cpastor(){
-        return view('pages.cpastor');
+       if (auth::check()) {
+			
+       return view('pages.cpastor');
+		
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function cpreacher(){
-        return view('pages.cpreacher');
+        if (auth::check()) {
+			
+       return view('pages.cpreacher');
+		
+		} else {
+			return view('pages.login');
+		}
     } 
 
     public function cuser(){
@@ -69,6 +123,14 @@ class PagesController extends Controller
     } 
 
     public function cdownloads(){
+		
+		if (auth::check()) {
+			
         return view('pages.cdownloads');
+		
+		} else {
+			return view('pages.login');
+		}
+		
     } 
 }

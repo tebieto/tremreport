@@ -6,15 +6,18 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\User;
-use App\Monthly;
-use App\Weekly;
-use App\G12;
-use App\Branch;
-use App\Sectiona;
-use App\Sectionb;
-use App\Sectionc;
-use App\Sectiond;
-use App\Sectione;
+use App\monthly;
+use App\weekly;
+use App\g12;
+use App\branch;
+use App\sectiona;
+use App\sectionb;
+use App\sectionc;
+use App\sectiond;
+use App\sectione;
+use App\cg12;
+use App\cdownloads;
+use App\event;
 Use Auth;
 Use Session;
 use Storage;
@@ -177,6 +180,36 @@ class SaveController extends Controller
 	
 	}
 	
+	public function createG12(Request $r)
+	{
+	
+ $this->validate($r, [
+ 
+		'country' => 'required',
+		'state' => 'required',
+		'city' => 'required',
+		'name' => 'required',
+		'address' => 'required',
+		'name' => 'required',
+		'branch' => 'required',
+	
+	]);	
+	
+		
+	Cg12::create([
+		'user_id' => Auth::id(),
+		'country' => $r->country,
+		'state' => $r->state,
+		'city' => $r->city,
+		'name' => $r->name,
+		'address' => $r->address,
+		'branch' => $r->branch
+		]);
+		
+		Session::flash('success', 'G12 created successfully.');
+	return redirect()->back();
+	
+	}
 	
 	public function saveBranch(Request $r)
 	{
@@ -208,5 +241,106 @@ class SaveController extends Controller
 	}
 	
 	
+	public function saveEvent(Request $r)
+	{
 	
+ $this->validate($r, [
+ 
+		'name' => 'required',
+		'description' => 'required',
+		'month' => 'required',
+		'year' => 'required',
+		'branch' => 'required',
+	
+	]);	
+	
+		
+	Event::create([
+		'user_id' => Auth::id(),
+		'name' => $r->name,
+		'description' => $r->description,
+		'month' => $r->month,
+		'year' => $r->year,
+		'branch' => $r->branch,
+		]);
+		
+		Session::flash('success', 'Event created successfully.');
+	return redirect()->back();
+	
+	}
+	
+	
+	public function createDownload(Request $r)
+	{
+	
+ $this->validate($r, [
+ 
+		'name' => 'required',
+		'description' => 'required',
+		'month' => 'required',
+		'year' => 'required',
+		'url' => 'required',
+	
+	]);	
+	
+		
+	Cdownloads::create([
+		'user_id' => Auth::id(),
+		'name' => $r->name,
+		'description' => $r->description,
+		'month' => $r->month,
+		'year' => $r->year,
+		'url' => $r->url,
+		]);
+		
+		Session::flash('success', 'Download created successfully.');
+	return redirect()->back();
+	
+	}
+	
+	
+	public function uploadFile(Request $request)
+	{
+		
+		// This class process an uploaded image and returns a valid URL
+		
+		
+			$file= $request->fl;
+		
+		
+		
+			$ext = $file->extension();
+			
+			//  we save file in files folder
+			
+			$link = $file->store('public/files');
+		
+		
+		
+	// If every thing goes well, we return a valid URL.
+	
+	return response(['URL'=>asset(Storage::url($link)), 'link'=>$link, 'ext' => $ext]);
+		
+		
+	}
+	
+public function allDownloads()
+	
+	{
+	
+	$downloads = Cdownloads::get();
+	
+	$all = array();
+	
+	 foreach ($downloads as $download):
+		
+		 array_push($all, $download); 
+		
+	 endforeach;
+	 
+	 return $all;
+	
+	}
+
+		
 }
