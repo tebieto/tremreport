@@ -16,14 +16,14 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://www.trem.org">HOME</a></li>
-                
+                @if (auth::check())
 					<li id="logout">
 						<form  method="post" action="/logout">
 						{{ csrf_field() }}
 						<button>LOGOUT</button>
 						</form>
 					</li>
-				
+				@endif
 				</ul>
             </div><!--/.nav-collapse -->
     </div>
